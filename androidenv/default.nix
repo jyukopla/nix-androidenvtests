@@ -1,10 +1,8 @@
 { pkgs ? import <nixpkgs> {}
 , pkgs_i686 ? import <nixpkgs> { system = "i686-linux"; }
+, autopatchelf ? import ../../nix-patchtools
 }:
 
-let
-  autopatchelf = import ../../nix-patchtools;
-in
 rec {
   composeAndroidPackages = import ./compose-android-packages.nix {
     inherit (pkgs) stdenv fetchurl requireFile makeWrapper unzip;

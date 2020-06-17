@@ -991,6 +991,44 @@
     };
   };
   
+  "build-tools"."29.0.3" = {
+    
+    name = "build-tools";
+    path = "build-tools/29.0.3";
+    revision = "29.0.3";
+    displayName = "Android SDK Build-Tools 29.0.3";
+    archives = {
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r29.0.3-linux.zip;
+        sha1 = "64efff52165cda5e31848acafa46a05e3f3b4651";
+      };
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r29.0.3-macosx.zip;
+        sha1 = "76520eb7712fb0bb4c023b55c6f65588ee268289";
+      };
+      
+    };
+  };
+  
+  "build-tools"."30.0.0" = {
+    
+    name = "build-tools";
+    path = "build-tools/30.0.0";
+    revision = "30.0.0";
+    displayName = "Android SDK Build-Tools 30";
+    archives = {
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r30-linux.zip;
+        sha1 = "5bdda303b7aba4073dd2aeb8003b6b0b57098021";
+      };
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r30-macosx.zip;
+        sha1 = "80b06ce5fa4af2ed14db343a8131af658dda79a8";
+      };
+      
+    };
+  };
+  
   "cmake"."3.10.2" = {
     
     name = "cmake";

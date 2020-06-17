@@ -24,7 +24,7 @@
 {fetchurl}:
 
 {
-  <xsl:for-each select="remotePackage[starts-with(@path, 'system-images;') and (not(type-details/codename) or type-details/codename != 'Q') and ( ) ]/archives/archive"> <!-- Blacklist Q versions and API version 8, revision 1, because their names are duplicates -->
+  <xsl:for-each select="remotePackage[starts-with(@path, 'system-images;') and (not(type-details/codename) or type-details/codename != 'Q') ]/archives/archive"> <!-- Blacklist Q versions and API version 8, revision 1, because their names are duplicates -->
     <xsl:variable name="revision">
       <xsl:value-of select="../../type-details/api-level" />-<xsl:value-of select="../../type-details/tag/id" />-<xsl:value-of select="../../type-details/abi" />
     </xsl:variable>

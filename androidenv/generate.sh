@@ -1,4 +1,5 @@
-#!/bin/sh -e
+#!/usr/bin/env nix-shell
+#!nix-shell -p curl libxslt -i sh
 
 mkdir -p xml
 

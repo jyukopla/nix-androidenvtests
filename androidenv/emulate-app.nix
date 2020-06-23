@@ -83,6 +83,8 @@ stdenv.mkDerivation {
           echo "hw.gpu.enabled=yes" >> $ANDROID_SDK_HOME/.android/avd/device.avd/config.ini
         ''}
 
+        echo "hw.keyboard=yes" >> $ANDROID_SDK_HOME/.android/avd/device.avd/config.ini
+
         ${stdenv.lib.concatMapStrings (extraAVDFile: ''
           ln -sf ${extraAVDFile} $ANDROID_SDK_HOME/.android/avd/device.avd
         '') extraAVDFiles}

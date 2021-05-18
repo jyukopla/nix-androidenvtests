@@ -50,8 +50,8 @@
       displayName = "China version of Wear OS Intel x86 Atom System Image";
       archives.all = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/android-wear-cn/x86-28_r03.zip;
-        sha1 = "2099d87709c5e064273925dbf2cf1fd081bf0262";
+        https://dl.google.com/android/repository/sys-img/android-wear-cn/x86-28_r06.zip;
+        sha1 = "e289b4f75e62cbd41ad4b07d1eeb6f496b65ca2c";
       };
     };
   

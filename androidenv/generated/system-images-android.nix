@@ -206,8 +206,8 @@
       displayName = "Intel x86 Atom System Image";
       archives.all = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/android/x86-15_r05.zip;
-        sha1 = "c387e0efed2cdc610e5944eea67b7b692d03760c";
+        https://dl.google.com/android/repository/sys-img/android/x86-15_r07.zip;
+        sha1 = "61381aef3fd0cdc8255cb3298072a920c80186ca";
       };
     };
   
@@ -219,8 +219,8 @@
       displayName = "Intel x86 Atom System Image";
       archives.all = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/android/x86-16_r06.zip;
-        sha1 = "bf1bf8c5591346118d2235da1ad20e7be8a3e9cd";
+        https://dl.google.com/android/repository/sys-img/android/x86-16_r07.zip;
+        sha1 = "ee6718e7556c8f8bd8d3f470b34f2c5dbf9bcff4";
       };
     };
   
@@ -232,8 +232,8 @@
       displayName = "Intel x86 Atom System Image";
       archives.all = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/android/x86-17_r04.zip;
-        sha1 = "03c6d022ab2dcbbcf655d78ba5ccb0431cadcaec";
+        https://dl.google.com/android/repository/sys-img/android/x86-17_r07.zip;
+        sha1 = "1ad5ffb51e31f5fe9fa47411fed2c2ade9a33865";
       };
     };
   

@@ -1029,6 +1029,102 @@
     };
   };
   
+  "build-tools"."30.0.1" = {
+    
+    name = "build-tools";
+    path = "build-tools/30.0.1";
+    revision = "30.0.1";
+    displayName = "Android SDK Build-Tools 30.0.1";
+    archives = {
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r30.0.1-linux.zip;
+        sha1 = "dae27b63a53f3c71a23a2e9517d435f79ce7975b";
+      };
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r30.0.1-macosx.zip;
+        sha1 = "b62ccd6d6468a374b7c8e641c3751bc929a89397";
+      };
+      
+    };
+  };
+  
+  "build-tools"."30.0.2" = {
+    
+    name = "build-tools";
+    path = "build-tools/30.0.2";
+    revision = "30.0.2";
+    displayName = "Android SDK Build-Tools 30.0.2";
+    archives = {
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/5a6ceea22103d8dec989aefcef309949c0c42f1d.build-tools_r30.0.2-macosx.zip;
+        sha1 = "6b0166d1f4b0b3d496c0dde660145dfa7898095f";
+      };
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r30.0.2-linux.zip;
+        sha1 = "363632ff8f7a198bf9fa94e3b9e0db6927bf373d";
+      };
+      
+    };
+  };
+  
+  "build-tools"."30.0.3" = {
+    
+    name = "build-tools";
+    path = "build-tools/30.0.3";
+    revision = "30.0.3";
+    displayName = "Android SDK Build-Tools 30.0.3";
+    archives = {
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r30.0.3-linux.zip;
+        sha1 = "2076ea81b5a2fc298ef7bf85d666f496b928c7f1";
+      };
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/f6d24b187cc6bd534c6c37604205171784ac5621.build-tools_r30.0.3-macosx.zip;
+        sha1 = "0807cd3f0dbc33c8be7f3d6faa263f6b14b502b7";
+      };
+      
+    };
+  };
+  
+  "build-tools"."31.0.0-rc3" = {
+    
+    name = "build-tools";
+    path = "build-tools/31.0.0-rc3";
+    revision = "31.0.0-rc3";
+    displayName = "Android SDK Build-Tools 31-rc3";
+    archives = {
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/012061446cfd98341585d0d07401d0bd1a4c30f6.build-tools_r31-rc3-macosx.zip;
+        sha1 = "e75dfb7a975809ba0ca0d25c2b82f7fd56444a4b";
+      };
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r31-rc3-linux.zip;
+        sha1 = "6859f11348d3984afbfcc74984802bd2e31cc0e2";
+      };
+      
+    };
+  };
+
+  
+  "build-tools"."31.0.0-rc4" = {
+    
+    name = "build-tools";
+    path = "build-tools/31.0.0-rc4";
+    revision = "31.0.0-rc4";
+    displayName = "Android SDK Build-Tools 31-rc4";
+    archives = {
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/6c0022965ad43e2d665e79ba9bfc7ffa2e690c59.build-tools_r31-rc4-macosx.zip;
+        sha1 = "48cdf02dd950b90ea0162518fc384a7547ce526d";
+      };
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/build-tools_r31-rc4-linux.zip;
+        sha1 = "42db9edee2eccdee8a204c49460f577523036063";
+      };
+      
+    };
+  };
+  
   "cmake"."3.10.2" = {
     
     name = "cmake";
@@ -1043,6 +1139,25 @@
       linux = fetchurl {
         url = https://dl.google.com/android/repository/cmake-3.10.2-linux-x86_64.zip;
         sha1 = "439e8799bf59f724f104bf62784b2985f1bfe561";
+      };
+      
+    };
+  };
+  
+  "cmake"."3.18.1" = {
+    
+    name = "cmake";
+    path = "cmake/3.18.1";
+    revision = "3.18.1";
+    displayName = "CMake 3.18.1";
+    archives = {
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/ba34c321f92f6e6fd696c8354c262c122f56abf8.cmake-3.18.1-darwin.zip;
+        sha1 = "809fdc8e14c745c6df4e506cc2157910f50b9cd9";
+      };
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/cmake-3.18.1-linux.zip;
+        sha1 = "9435bbe2120763871c75c37a365451b48c007fed";
       };
       
     };
@@ -1067,20 +1182,20 @@
     };
   };
   
-  "cmdline-tools"."1.0-rc01" = {
+  "cmdline-tools"."1.0" = {
     
     name = "cmdline-tools";
-    path = "cmdline-tools/1.0-alpha01";
-    revision = "1.0-rc01";
+    path = "cmdline-tools/1.0";
+    revision = "1.0";
     displayName = "Android SDK Command-line Tools";
     archives = {
       linux = fetchurl {
-        url = https://dl.google.com/android/repository/commandlinetools-linux-5842447_latest.zip;
-        sha1 = "f331fcfae47e0d0a478e3f2d30ce70b4a69439bc";
+        url = https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip;
+        sha1 = "6ffc5bd72db2c755f9b374ed829202262a6d8aaf";
       };
       macosx = fetchurl {
-        url = https://dl.google.com/android/repository/commandlinetools-mac-5842447_latest.zip;
-        sha1 = "65e2c7b86b48a3d43d27a9c936fc1ccf7ba01055";
+        url = https://dl.google.com/android/repository/commandlinetools-mac-6200805_latest.zip;
+        sha1 = "23f803c07e392bb769507c88b23c2c7868cc7a6f";
       };
       
     };
@@ -1603,7 +1718,26 @@
       
     };
   };
-  
+
+  "platform-tools"."31.0.2" = {
+    
+    name = "platform-tools";
+    path = "platform-tools";
+    revision = "31.0.2";
+    displayName = "Android SDK Platform-Tools";
+    archives = {
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/42b081e1e068bb936179551684cdcb30315e245c.platform-tools_r31.0.2-darwin.zip;
+        sha1 = "78937049851e1db90317612c6b831759f56fc86d";
+      };
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/platform-tools_r31.0.2-linux.zip;
+        sha1 = "ff02a9d8c6fa9687e1207fc0c4b84033925d452d";
+      };
+      
+    };
+  };
+
   "platforms"."10" = {
     
     name = "platforms";
@@ -1936,8 +2070,8 @@
     archives = {
       
         all = fetchurl {
-          url = https://dl.google.com/android/repository/platform-29_r03.zip;
-          sha1 = "670e2e104333dae90e16ea3b615f0b63da5883ae";
+          url = https://dl.google.com/android/repository/platform-29_r05.zip;
+          sha1 = "9d8a7e0ffa5168dbca6c60355b9129c6c7572aff";
         };
       
     };
@@ -1958,6 +2092,22 @@
         url = https://dl.google.com/android/repository/android-1.5_r04-macosx.zip;
         sha1 = "d3a67c2369afa48b6c3c7624de5031c262018d1e";
       };
+      
+    };
+  };
+  
+  "platforms"."30" = {
+    
+    name = "platforms";
+    path = "platforms/android-30";
+    revision = "30";
+    displayName = "Android SDK Platform 30";
+    archives = {
+      
+        all = fetchurl {
+          url = https://dl.google.com/android/repository/platform-30_r03.zip;
+          sha1 = "e7c6280901dcfa511af098d67dd88c4dfcbc6ea2";
+        };
       
     };
   };
@@ -2063,6 +2213,60 @@
           url = https://dl.google.com/android/repository/android-2.3.1_r02.zip;
           sha1 = "209f8a7a8b2cb093fce858b8b55fed3ba5206773";
         };
+      
+    };
+  };
+  
+  "platforms"."S" = {
+    
+    name = "platforms";
+    path = "platforms/android-S";
+    revision = "S";
+    displayName = "Android SDK Platform S";
+    archives = {
+      
+        all = fetchurl {
+          url = https://dl.google.com/android/repository/platform-S_r04.zip;
+          sha1 = "45fc02639af736a2ab586e3fdacbbe5e499f0f1b";
+        };
+      
+    };
+  };
+  
+  "skiaparser"."6" = {
+    
+    name = "skiaparser";
+    path = "skiaparser/1";
+    revision = "6";
+    displayName = "Layout Inspector image server for API 29-30";
+    archives = {
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/skiaparser-7083912-linux.zip;
+        sha1 = "78af2cd3e4168af80c16d7686536baa318e10cc4";
+      };
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/skiaparser-7083912-mac.zip;
+        sha1 = "73aa4e3b52177cf7d4cf956a74311e0097987bb4";
+      };
+      
+    };
+  };
+  
+  "skiaparser"."2" = {
+    
+    name = "skiaparser";
+    path = "skiaparser/2";
+    revision = "2";
+    displayName = "Layout Inspector image server for API S";
+    archives = {
+      linux = fetchurl {
+        url = https://dl.google.com/android/repository/skiaparser-7248848-linux.zip;
+        sha1 = "2703a570224a5ced1f73eb3efbdb3192a1ecec81";
+      };
+      macosx = fetchurl {
+        url = https://dl.google.com/android/repository/skiaparser-7248848-mac.zip;
+        sha1 = "ecf8794beccf578d4130bb9f7f2c7fa0c40c62c2";
+      };
       
     };
   };

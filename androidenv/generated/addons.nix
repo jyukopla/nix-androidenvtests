@@ -423,6 +423,17 @@
     };
     
 
+    "extras;google;Android_Emulator_Hypervisor_Driver" = {
+      name = "extras-google-Android_Emulator_Hypervisor_Driver";
+      path = "extras/google/Android_Emulator_Hypervisor_Driver";
+      revision = "1.7.0";
+      displayName = "Android Emulator Hypervisor Driver for AMD Processors (installer)";
+      archives = {
+      
+      };
+    };
+    
+
     "extras;google;admob_ads_sdk" = {
       name = "extras-google-admob_ads_sdk";
       path = "extras/google/admob_ads_sdk";
@@ -605,7 +616,7 @@
     "extras;google;usb_driver" = {
       name = "extras-google-usb_driver";
       path = "extras/google/usb_driver";
-      revision = "11";
+      revision = "13";
       displayName = "Google USB Driver";
       archives = {
       

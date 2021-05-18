@@ -167,8 +167,8 @@
       displayName = "Google Play Intel x86 Atom System Image";
       archives.windows = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86-30_r05-windows.zip;
-        sha1 = "de8956f69a7c856957c7248878f713b9fe9428c0";
+        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86-30_r09-windows.zip;
+        sha1 = "13c100b62983d64db53cef3d70fea789d89f3232";
       };
     };
   
@@ -180,8 +180,8 @@
       displayName = "Google Play Intel x86 Atom System Image";
       archives.macosx = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86-30_r05-darwin.zip;
-        sha1 = "de8956f69a7c856957c7248878f713b9fe9428c0";
+        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86-30_r09-darwin.zip;
+        sha1 = "13c100b62983d64db53cef3d70fea789d89f3232";
       };
     };
   
@@ -193,47 +193,60 @@
       displayName = "Google Play Intel x86 Atom System Image";
       archives.linux = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86-30_r05-linux.zip;
-        sha1 = "de8956f69a7c856957c7248878f713b9fe9428c0";
+        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86-30_r09-linux.zip;
+        sha1 = "13c100b62983d64db53cef3d70fea789d89f3232";
       };
     };
   
 
     "30".google_apis_playstore."x86_64".windows = {
       name = "system-image-30-google_apis_playstore-x86_64";
-      path = "system-images/android-30/google_apis_playstore/x86_64";
+      path = "system-images/android-S/google_apis_playstore/x86_64";
       revision = "30-google_apis_playstore-x86_64";
       displayName = "Google Play Intel x86 Atom_64 System Image";
       archives.windows = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86_64-30_r05-windows.zip;
-        sha1 = "d5eae687cc1629f41aef5475accc034753437796";
+        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86_64-S_r03-windows.zip;
+        sha1 = "093e0537cb18b25d8399a1af3ec955d2085f15ff";
       };
     };
   
 
     "30".google_apis_playstore."x86_64".macosx = {
       name = "system-image-30-google_apis_playstore-x86_64";
-      path = "system-images/android-30/google_apis_playstore/x86_64";
+      path = "system-images/android-S/google_apis_playstore/x86_64";
       revision = "30-google_apis_playstore-x86_64";
       displayName = "Google Play Intel x86 Atom_64 System Image";
       archives.macosx = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86_64-30_r05-darwin.zip;
-        sha1 = "d5eae687cc1629f41aef5475accc034753437796";
+        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86_64-S_r03-darwin.zip;
+        sha1 = "093e0537cb18b25d8399a1af3ec955d2085f15ff";
       };
     };
   
 
     "30".google_apis_playstore."x86_64".linux = {
       name = "system-image-30-google_apis_playstore-x86_64";
-      path = "system-images/android-30/google_apis_playstore/x86_64";
+      path = "system-images/android-S/google_apis_playstore/x86_64";
       revision = "30-google_apis_playstore-x86_64";
       displayName = "Google Play Intel x86 Atom_64 System Image";
       archives.linux = fetchurl {
         url = 
-        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86_64-30_r05-linux.zip;
-        sha1 = "d5eae687cc1629f41aef5475accc034753437796";
+        https://dl.google.com/android/repository/sys-img/google_apis_playstore/x86_64-S_r03-linux.zip;
+        sha1 = "093e0537cb18b25d8399a1af3ec955d2085f15ff";
+      };
+    };
+  
+
+    "30".google_apis_playstore."arm64-v8a".linux = {
+      name = "system-image-30-google_apis_playstore-arm64-v8a";
+      path = "system-images/android-S/google_apis_playstore/arm64-v8a";
+      revision = "30-google_apis_playstore-arm64-v8a";
+      displayName = "Google Play ARM 64 v8a System Image";
+      archives.linux = fetchurl {
+        url = 
+        https://dl.google.com/android/repository/sys-img/google_apis_playstore/arm64-v8a-S_r03-linux.zip;
+        sha1 = "528e302e9966e8320d1c2bdc8235762fe4a9e733";
       };
     };
   
